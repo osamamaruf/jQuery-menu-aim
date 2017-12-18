@@ -1,4 +1,4 @@
-native-menu-aim
+menu-aim
 ===============
 
 menu-aim is a javascript plugin for dropdown menus that can differentiate
@@ -15,6 +15,11 @@ make for quicker transitions when navigating up and down the menu. The
 experience is hopefully similar to amazon.com/'s "Shop by Department"
 dropdown.
 
+## Bower install :
+
+Use the below command to install menu-aim from bower:
+        bower install menu-aim --save
+        
 ## Use like so :
 	
 Note: el is the menu/dropdown.
