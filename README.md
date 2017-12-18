@@ -18,8 +18,10 @@ dropdown.
 ## Bower install :
 
 Use the below command to install menu-aim from bower:
-        bower install menu-aim --save
-        
+        `
+                bower install menu-aim --save
+        `
+
 ## Use like so :
 	
 Note: el is the menu/dropdown.
