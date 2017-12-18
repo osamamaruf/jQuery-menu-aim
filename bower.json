@@ -1,6 +1,6 @@
 {
   "name": "menu-aim",
-  "main": "dist/menu-aim.min.js",
+  "main": "menu-aim.js",
   "homepage": "https://github.com/osamamaruf/jQuery-menu-aim",
   "authors": [
     "Syed Osama Maruf"

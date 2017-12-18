@@ -2,7 +2,7 @@
   "name": "menu-aim",
   "version": "1.0.0",
   "description": "javascript plugin to fire events when user's cursor aims at particular dropdown menu items.",
-  "main": "dist/menu-aim.min.js",
+  "main": "menu-aim.js",
   "directories": {
     "example": "example"
   },
