@@ -1,10 +1,10 @@
 /**
  * Converted to Javascript by : Syed Osama Maruf from https://github.com/kamens/jQuery-menu-aim
- * menu-aim is a javascript plugin for dropdown menus that can differentiate
+ * hover-menu-aim is a javascript plugin for dropdown menus that can differentiate
  * between a user trying hover over a dropdown item vs trying to navigate into
  * a submenu's contents.
  *
- * menu-aim assumes that you have are using a menu with submenus that expand
+ * hover-menu-aim assumes that you have are using a menu with submenus that expand
  * to the menu's right. It will fire events when the user's mouse enters a new
  * dropdown item *and* when that item is being intentionally hovered over.
  *
@@ -20,7 +20,7 @@
  * may briefly hover over "Chimps." This shouldn't close the "Gorilla Content"
  * area.
  *
- * This problem is normally solved using timeouts and delays. menu-aim tries to
+ * This problem is normally solved using timeouts and delays. hover-menu-aim tries to
  * solve this by detecting the direction of the user's mouse movement. This can
  * make for quicker transitions when navigating up and down the menu. The
  * experience is hopefully similar to amazon.com/'s "Shop by Department"
@@ -28,7 +28,7 @@
  *
  * Use like so:
  *      el would be a dropdown
- *      _menuAim.menuAim(el,{
+ *      hMenuAim.menuAim(el,{
             activate: function(){},
             deactivate: function(){}
         });
@@ -70,12 +70,12 @@
  *
  * https://github.com/osamamaruf/jQuery-menu-aim.git
 */
-var _menuAim;
-_menuAim = _menuAim || (function () {
+var hMenuAim;
+hMenuAim = hMenuAim || (function () {
     var mouseLocs = [];
 
     menuAim = function (menus, opts) {
-        // Initialize menu-aim for all elements in menu collection
+        // Initialize hover-menu-aim for all elements in menu collection
         Array.prototype.forEach.call(menus, function (m) {
             init(m, opts);
         });

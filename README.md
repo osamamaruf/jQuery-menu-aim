@@ -1,7 +1,7 @@
-menu-aim
+hover-menu-aim
 ===============
 
-menu-aim is a javascript plugin for dropdown menus that can differentiate
+hover-menu-aim is a javascript plugin for dropdown menus that can differentiate
 between a user trying hover over a dropdown item vs trying to navigate into
 a submenu's contents.
 
@@ -17,16 +17,17 @@ dropdown.
 
 ## Bower install :
 
-Use the below command to install menu-aim from bower:
+Use the below command to install hover-menu-aim from bower:
+
         `
-                bower install menu-aim --save
+                bower install hover-menu-aim --save
         `
 
 ## Use like so :
 	
 Note: el is the menu/dropdown.
 
-		_menuAim.menuAim(el,{
+		hMenuAim.menuAim(el,{
             activate: function(){},
             deactivate: function(){}
         });
@@ -75,7 +76,7 @@ the relevant row's HTML element as the execution context ('this'):
          submenuDirection: "right"
      });
 
-menu-aim assumes that you are using a menu with submenus that expand
+hover-menu-aim assumes that you are using a menu with submenus that expand
 to the menu's right. It will fire events when the user's mouse enters a new
 dropdown item *and* when that item is being intentionally hovered over.
 

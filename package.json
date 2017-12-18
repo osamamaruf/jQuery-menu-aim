@@ -1,8 +1,8 @@
 {
-  "name": "menu-aim",
+  "name": "hover-menu-aim",
   "version": "1.0.0",
   "description": "javascript plugin to fire events when user's cursor aims at particular dropdown menu items.",
-  "main": "menu-aim.js",
+  "main": "hover-menu-aim.js",
   "directories": {
     "example": "example"
   },
@@ -24,7 +24,8 @@
     "menu",
     "aim\"",
     "\"aim",
-    "menu\""
+    "menu\"",
+    "\"hover-menu-aim\""
   ],
   "author": "Syed Osama Maruf",
   "license": "MIT",
