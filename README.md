@@ -5,9 +5,9 @@ menu-aim is a javascript plugin for dropdown menus that can differentiate
 between a user trying hover over a dropdown item vs trying to navigate into
 a submenu's contents.
 
-[Try a demo.](https://rawgit.com/osamamaruf/jQuery-menu-aim.git/master/example/example.html)
+[Try a demo.](https://rawgit.com/osamamaruf/jQuery-menu-aim/master/example/example.html)
 
-![Amazon screenshot](https://rawgit.com/osamamaruf/jQuery-menu-aim.git/master/amazon.png)
+![Amazon screenshot](https://raw.githubusercontent.com/osamamaruf/jQuery-menu-aim/master/amazon.png)
 
 This problem is normally solved using timeouts and delays. menu-aim tries to
 solve this by detecting the direction of the user's mouse movement. This can
@@ -15,9 +15,10 @@ make for quicker transitions when navigating up and down the menu. The
 experience is hopefully similar to amazon.com/'s "Shop by Department"
 dropdown.
 
-## Use like so(el would be a dropdown):
+## Use like so :
+	
+Note: el is the menu/dropdown.
 
-     
 		_menuAim.menuAim(el,{
             activate: function(){},
             deactivate: function(){}
@@ -73,9 +74,9 @@ dropdown item *and* when that item is being intentionally hovered over.
 
 ## Want an example to learn from?
 
-Check out example/example.html -- it has [a working dropdown for you to play with](https://rawgit.com/osamamaruf/jQuery-menu-aim.git/master/example/example.html):
+Check out example/example.html -- it has [a working dropdown for you to play with](https://rawgit.com/osamamaruf/jQuery-menu-aim/master/example/example.html):
 
-![Example screenshot](https://rawgit.com/osamamaruf/jQuery-menu-aim.git/master/example.png)<br>
+![Example screenshot](https://rawgit.com/osamamaruf/jQuery-menu-aim/master/example.png)<br>
 _Play with the above example full of fun monkey pictures by opening example/example.html after downloading the repo._
 
 ## FAQ
