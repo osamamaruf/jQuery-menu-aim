@@ -1,13 +1,13 @@
-jQuery-menu-aim
+native-menu-aim
 ===============
 
-menu-aim is a jQuery plugin for dropdown menus that can differentiate
+menu-aim is a javascript plugin for dropdown menus that can differentiate
 between a user trying hover over a dropdown item vs trying to navigate into
 a submenu's contents.
 
-[Try a demo.](https://rawgithub.com/kamens/jQuery-menu-aim/master/example/example.html)
+[Try a demo.](https://rawgit.com/osamamaruf/jQuery-menu-aim.git/master/example/example.html)
 
-![Amazon screenshot](https://raw.github.com/kamens/jQuery-menu-aim/master/amazon.png)
+![Amazon screenshot](https://rawgit.com/osamamaruf/jQuery-menu-aim.git/master/amazon.png)
 
 This problem is normally solved using timeouts and delays. menu-aim tries to
 solve this by detecting the direction of the user's mouse movement. This can
@@ -15,12 +15,13 @@ make for quicker transitions when navigating up and down the menu. The
 experience is hopefully similar to amazon.com/'s "Shop by Department"
 dropdown.
 
-## Use like so:
+## Use like so(el would be a dropdown):
 
-     $("#menu").menuAim({
-         activate: $.noop,  // fired on row activation
-         deactivate: $.noop  // fired on row deactivation
-     });
+     
+		_menuAim.menuAim(el,{
+            activate: function(){},
+            deactivate: function(){}
+        });
 
 ...to receive events when a menu's row has been purposefully (de)activated.
 
@@ -52,7 +53,7 @@ the relevant row's HTML element as the execution context ('this'):
 
          // Selector for identifying which elements in the menu are rows
          // that can trigger the above events. Defaults to "> li".
-         rowSelector: "> li",
+         rowSelector: "li",
 
          // You may have some menu rows that aren't submenus and therefore
          // shouldn't ever need to "activate." If so, filter submenu rows w/
@@ -72,14 +73,13 @@ dropdown item *and* when that item is being intentionally hovered over.
 
 ## Want an example to learn from?
 
-Check out example/example.html -- it has [a working dropdown for you to play with](https://rawgithub.com/kamens/jQuery-menu-aim/master/example/example.html):
+Check out example/example.html -- it has [a working dropdown for you to play with](https://rawgit.com/osamamaruf/jQuery-menu-aim.git/master/example/example.html):
 
-![Example screenshot](https://raw.github.com/kamens/jQuery-menu-aim/master/example.png)<br>
+![Example screenshot](https://rawgit.com/osamamaruf/jQuery-menu-aim.git/master/example.png)<br>
 _Play with the above example full of fun monkey pictures by opening example/example.html after downloading the repo._
 
 ## FAQ
 
 1. What's the license? [MIT](http://en.wikipedia.org/wiki/MIT_License).
-2. Does it support horizontal menus or submenus that open to the left? Yup. Check out the submenuDirection option above.
-3. I work at a big company that requires a version number on this third party code before I can use it. Do you have a version number? Sure, current version: 1.1
-4. I'm not nearly bored enough. Got anything else? [Read about this plugin's creation](http://bjk5.com/post/44698559168/breaking-down-amazons-mega-dropdown).
+2. I work at a big company that requires a version number on this third party code before I can use it. Do you have a version number? Sure, current version: 1.0.0
+
